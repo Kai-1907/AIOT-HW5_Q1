@@ -14,16 +14,13 @@
 
 ### 1. 複製專案
 ```bash
-git clone <你的 GitHub 專案網址>
+git clone <https://github.com/Kai-1907/AIOT-HW5_Q1.git>
 cd ai-detector-app
-### 1. 複製專案
-```bash
-git clone <你的 GitHub 專案網址>
-cd ai-detector-app
-2. 安裝必要套件
+```
+### 2. 安裝必要套件
 建議先建立虛擬環境：
 
-Bash
+```Bash
 
 python -m venv venv
 # 啟動虛擬環境 (Windows)
@@ -32,19 +29,22 @@ python -m venv venv
 source venv/bin/activate
 
 pip install -r requirements.txt
-3. 訓練模型
+```
+### 3. 訓練模型
 在執行網頁前，需要先產生模型檔案：
 
-Bash
+```Bash
 
 python train_model.py
-4. 啟動 Streamlit Demo
-Bash
+```
+### 4. 啟動 Streamlit Demo
+```Bash
 
 streamlit run app.py
 啟動後，瀏覽器會自動開啟 http://localhost:8501。
+```
 
-🌐 線上 Demo 方式
+### 🌐 線上 Demo 方式
 本專案支援 Streamlit Cloud 快速部署：
 
 將專案推送到 GitHub。
@@ -53,7 +53,7 @@ streamlit run app.py
 
 連結此 Repository 並選擇 app.py 進行部署。
 
-🛠 技術棧
+### 🛠 技術棧
 Language: Python 3.9+
 
 ML Library: Scikit-learn, Joblib
